@@ -1,0 +1,153 @@
+body, #root, html, .app {
+  min-height: 100vh;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--text-light);
+}
+
+
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .comic-panel {
+    width: 100%;
+  }
+}
+
+
+
+.comic-strip {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.comic-panel {
+  flex: 0 0 clamp(180px, 20%, 220px);
+  box-sizing: border-box;
+  position: relative;
+   margin: 0;
+   height: 200px;
+   border: 2px solid white;
+}
+.comic-panel {
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 48%; 
+}
+
+.comic-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.speech-bubble {
+  position: absolute;
+  background-color: white;
+
+  font-size: 14px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center;
+  z-index: 1;
+  padding: 10px;
+  top: 3%;
+  left: 10%;
+  transform: translateX(-50%); 
+  line-height: 1;
+  border-radius: 34px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 15% 82% 0% 100% / 64% 50% 50% 36%;
+  box-shadow: 6px 3px 32px -6px rgba(0,0,0,0.5);
+}
+
+img {
+  max-width: 100%;
+  margin: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: block;
+  border: 2px solid black;
+  display: block;
+  box-sizing: border-box;
+}
+
+
+.comic-pene{
+  display: inline-block;
+}
+input {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+}
+
+input {
+  border: solid black 2px;
+  width: 50%;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #0a0a0a;
+  border-radius: 4px;
+}
+
+/* Optional: Style the input placeholder */
+input::placeholder {
+  color: #888;
+}
+.form{
+  width: 60%;
+  background-color:  lightblue;
+}
+.comic-panels {
+  
+  text-align: center;
+  /* background-color: aqua; */
+}
